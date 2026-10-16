@@ -1,9 +1,9 @@
 export function Bio({ name, username }) {
   return (
     <header>
-      <h2 className="text-6xl font-bold">Jelian Limetares</h2>
+      <h2 className="text-6xl font-bold">Jelian S. Limetares</h2>
       <p className="mt-1 text-2xl text-[#FA8112]">
-        @xhieczi4
+        @xhieczi
       </p>
       <p className="mt-3 text-2xl">Front-end developer from Cebu City.</p>
     </header>
