@@ -40,6 +40,8 @@ function Profile({
           className="cursor-pointer rounded-lg border-2 border-[#222222] px-8 py-3 text-xl font-bold"
           onClick={handleReset}
         >
+
+            
           Reset
         </button>
       </div>
