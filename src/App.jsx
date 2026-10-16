@@ -4,6 +4,7 @@ import { useState } from "react";
 
 import Navbar from "./components/Navbar";
 import Profile from "./components/Profile";
+import Bio from "./components/Bio";
 
 function App() {
   const [followers, setFollowers] = useState(0);
@@ -73,7 +74,7 @@ function App() {
           </div>
         </div> */}
 
-        <div className="flex gap-4">
+        {/* <div className="flex gap-4">
           <button
             className="cursor-pointer rounded-lg bg-[#FA8112] px-8 py-3 text-xl font-bold text-[#222222]"
             onClick={handleFollow}
@@ -92,7 +93,7 @@ function App() {
           >
             Reset
           </button>
-        </div>
+        </div> */}
       </div>
 
       <main className="grid grid-cols-3 gap-8 px-20 pt-8">
