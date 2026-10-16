@@ -15,8 +15,8 @@ function Profile({
         <Bio />
 
         <div className="mt-6 flex gap-6">
-          <StatCard value={followers} label="Followers" />
-          <StatCard value={rate} label="PHP per hour" />
+          <StatCard value="100.10K" label="Followers" />
+          <StatCard value="500" label="PHP per hour" />
         </div>
       </div>
 
