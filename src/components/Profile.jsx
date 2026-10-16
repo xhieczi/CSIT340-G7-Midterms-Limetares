@@ -1,6 +1,7 @@
 
 import Bio from "./Bio";
 import StatCard from "./StatCard";
+import Hire from "./Hire";
 
 function Profile({
   followers,
@@ -15,8 +16,8 @@ function Profile({
         <Bio />
 
         <div className="mt-6 flex gap-6">
-          <StatCard value="100.10K" label="Followers" />
-          <StatCard value="500" label="PHP per hour" />
+          <StatCard value={followers} label="Followers" />
+          <StatCard value={rate} label="PHP per hour" />
         </div>
       </div>
 
@@ -42,6 +43,7 @@ function Profile({
           Reset
         </button>
       </div>
+      <Hire rate={rate} />
     </div>
   );
 }
