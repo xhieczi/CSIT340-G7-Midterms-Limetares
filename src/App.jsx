@@ -1,4 +1,9 @@
+
+
 import { useState } from "react";
+
+import Navbar from "./components/Navbar";
+import Profile from "./components/Profile";
 
 function App() {
   const [followers, setFollowers] = useState(0);
@@ -33,18 +38,22 @@ function App() {
   }
 
   return (
+    
     <div className="flex min-h-screen flex-col bg-[#FAF3E1] text-[#222222]">
-      <nav className="flex items-center justify-between bg-[#222222] px-20 py-6 text-[#FAF3E1]">
+      
+      <Navbar />
+      {/* <nav className="flex items-center justify-between bg-[#222222] px-20 py-6 text-[#FAF3E1]">
         <h1 className="text-3xl font-bold">DevHub</h1>
         <ul className="flex gap-10 text-xl">
           <li>Profile</li>
           <li>Repositories</li>
           <li>Settings</li>
         </ul>
-      </nav>
+      </nav> */}
 
       <div className="flex items-end justify-between bg-[#F5E7C6] px-20 py-10">
-        <div>
+        <Profile />
+        {/* <div>
           <header>
             <h2 className="text-6xl font-bold">Jelian Limetares</h2>
             <p className="mt-1 text-2xl text-[#FA8112]">
@@ -62,7 +71,7 @@ function App() {
               <p className="mt-1 text-lg">PHP per hour</p>
             </div>
           </div>
-        </div>
+        </div> */}
 
         <div className="flex gap-4">
           <button
